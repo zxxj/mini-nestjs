@@ -5,12 +5,16 @@ import "reflect-metadata"
 
 /**
  * 
- * @param target 类的原型
- * @param propertyKey 方法名
- * @param desciprtor 属性描述器
+ * @param target 类的原型: AppController.prototype
+ * @param propertyKey 方法名: hello
+ * @param desciprtor 属性描述器: 表示hello方法的属性描述器
  */
-export const Get = () :MethodDecorator => {
+export const Get = (path: string = '') :MethodDecorator => {
 	return (target: any, propertyKey: string, desciprtor: PropertyDescriptor) => {
-		// todo
+		// 为desciprtor.value,也就是hello函数添加元数据path
+		Reflect.defineMetadata('path', path, desciprtor.value)
+
+		// 为desciprtor.value,也就是hello函数添加元数据method
+		Reflect.defineMetadata('method', 'GET', desciprtor.value)
 	}
 }
