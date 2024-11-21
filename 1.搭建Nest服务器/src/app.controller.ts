@@ -4,7 +4,7 @@ import { Get } from "./@nestjs/common/httpMethod.decorator"
 @Controller()
 export class AppController {
 
-	@Get('hello')
+	@Get()
 	hello(): string {
 		return 'hello'
 	}

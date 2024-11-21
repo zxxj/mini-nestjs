@@ -12,9 +12,7 @@ interface ModuleMetadata {
  * @returns 类装饰器(模块装饰器)
  */
 export const Module = (metadata: ModuleMetadata) :ClassDecorator => {
-	// 给模块类添加元数据, target是AppModule或其他模块类, 元数据的名字叫controllers, 值是controllers数组: controllers: [AppController]
 	return (target: Function) => {
-		console.log(target)
-		Reflect.defineMetadata('controllers', metadata.controllers, target)
+		// todo
 	}
 }	 
