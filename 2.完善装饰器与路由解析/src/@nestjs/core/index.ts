@@ -1,4 +1,3 @@
-export * from "./nestFactory"
-export * from "./logger"
-export * from "./nestApplication"
-
+export * from './nestFactory'
+export * from './logger'
+export * from './nestApplication'
