@@ -21,5 +21,6 @@ export function Controller(prefixOrOptions?: string | ControllerOptions): ClassD
   return (target: Function) => {
     // 给控制器类添加prefix这个代表路径前缀的属性的元数据
     Reflect.defineMetadata('prefix', options.prefix || '', target)
+    // todo
   }
 }
