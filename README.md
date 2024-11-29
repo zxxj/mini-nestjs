@@ -8,6 +8,6 @@
 
 [4. 配置热重载(nodemon)](https://juejin.cn/post/7442163692651692047)
 
-[4. 配置路由)](https://juejin.cn/post/7442580629592981538)
+[5. 配置路由](https://juejin.cn/post/7442580629592981538)
 
 
