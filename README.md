@@ -8,6 +8,8 @@
 
 [4. 配置热重载(nodemon)](https://juejin.cn/post/7442163692651692047)
 
-[5. 配置路由](https://juejin.cn/post/7442580629592981538)
+[5. 配置路由(启动项目时映射所有路由)](https://juejin.cn/post/7442580629592981538)
+
+[6. 实现@Requst与@Req 参数装饰器 在映射路由时解析参数](https://juejin.cn/post/7449582871675732005)
 
 
