@@ -11,7 +11,7 @@ export class Logger {
 
     // 打印日志
     console.log(
-      `[${clc.yellow('Nest')}] ${clc.green(pid)}  - ${clc.blue(timestamp)}  ${clc.yellow('LOG')} [${clc.cyan(context)}] ${clc.white(message)}`
+      `[${clc.yellow('Nest')}] ${clc.red(pid.toString())}  - ${clc.blue(timestamp)}  ${clc.yellow('LOG')} [${clc.cyan(context)}] ${clc.yellowBright(message)}`
     )
   }
 }
